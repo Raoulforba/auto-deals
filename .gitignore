@@ -1,0 +1,30 @@
+# Variables d'environnement et secrets
+.env
+.env.*
+!.env.example
+
+# Python
+**/.venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Node.js
+**/node_modules/
+frontend/dist/
+
+# Fichiers temporaires
+*.log
+.DS_Store
+
+# Bases de données et sauvegardes locales
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.sql.gz
+
+# Photos et fichiers téléversés
+backend/uploads/*
+!backend/uploads/.gitkeep

@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101010;
+}
+
+/* Animation du logo */
+@keyframes logoReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-35px) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Animation du titre */
+@keyframes titleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation du texte */
+@keyframes textReveal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation du bouton */
+@keyframes buttonReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-logo {
+  animation: logoReveal 1.2s ease-out both;
+}
+
+.animate-title {
+  animation: titleReveal 1s ease-out 0.4s both;
+}
+
+.animate-text {
+  animation: textReveal 1.2s ease-out 0.8s both;
+}
+
+.animate-button {
+  animation: buttonReveal 1s ease-out 1.2s both;
+}
