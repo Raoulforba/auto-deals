@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import { apiRequest } from "../services/api"
 
-const API_URL = "http://127.0.0.1:8000"
+const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"
 const WHATSAPP_NUMBER = "237657902986"
 
 export default function PublicVehicleDetails() {

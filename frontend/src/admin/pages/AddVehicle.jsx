@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { apiRequest } from "../../services/api"
 
-const API_URL = "http://127.0.0.1:8000"
+const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"
 
 const INITIAL_FORM = {
   marque: "",
