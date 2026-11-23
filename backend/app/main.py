@@ -77,9 +77,11 @@ app.mount(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "https://auto-deals-123j5ptfv-asma-414b.vercel.app",
+allow_origins=[
+    "http://localhost:5173",
+    "https://auto-deals-123j5ptfv-asma-414b.vercel.app",
+    "https://auto-deals-iota.vercel.app",
+    "https://auto-deals-blgztw7px-asma-414b.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
